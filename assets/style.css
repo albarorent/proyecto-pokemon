@@ -184,6 +184,7 @@ body {
 
     .background{
       object-fit: cover;
+      height: 150%;
     }
   }
   
@@ -194,6 +195,7 @@ body {
 
     .background{
       object-fit: cover;
+      height: 150%;
     }
 
     .aplicacion__pokemon{
