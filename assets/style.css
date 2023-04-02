@@ -181,6 +181,10 @@ body {
     .aplicacion__pokemon-jugadores {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .background{
+      object-fit: cover;
+    }
   }
   
   @media (max-width: 605px) {
@@ -189,7 +193,7 @@ body {
     }
 
     .background{
-        height: 150%;
+      object-fit: cover;
     }
 
     .aplicacion__pokemon{
