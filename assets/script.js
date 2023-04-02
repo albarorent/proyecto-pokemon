@@ -16,13 +16,15 @@ function buscarPokemon(e) {
         return;
     }
     limpiarHTML();
-    fetchData(buscarInput.trim());
+    valor = buscarInput.toLowerCase();
+    fetchData(valor.trim());
 }
 
 
 
 const fetchData = async (pokemon) => {
     try {
+
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
         const data = await res.json()
 
