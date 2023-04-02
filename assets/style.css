@@ -223,3 +223,15 @@ body {
         height: 180%;
     }
   }
+
+  @media (max-width: 375px) {
+    .background{
+        height: 200%;
+    }
+  }
+
+  @media (max-width: 290px) {
+    .background{
+        height: 220%;
+    }
+  }
