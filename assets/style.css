@@ -27,31 +27,30 @@ body {
   justify-content: center;
 }
 
-.background{
-    position: absolute;
-    width: 100%;
-    height: 150vh;
-    background-size: cover;
-    background-position:center ;
-    overflow: hidden;
+.background {
+  position: absolute;
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
-
 .alerta__error {
-    margin-top: 2rem;
-    background-color: transparent;
-    color: var(--color-error);
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-  }
-  
-  .alerta__error-bold {
-    font-weight: 700;
-  }
+  margin-top: 2rem;
+  background-color: transparent;
+  color: var(--color-error);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.alerta__error-bold {
+  font-weight: 700;
+}
 
 .aplicacion__pokemon-contenedor {
   display: flex;
@@ -175,63 +174,77 @@ body {
   gap: 1rem;
 }
 
-
-
 @media (max-width: 975px) {
-    .aplicacion__pokemon-jugadores {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .background{
-      object-fit: cover;
-      height: 150%;
-    }
-  }
-  
-  @media (max-width: 605px) {
-    .aplicacion__pokemon-jugadores {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .background{
-      object-fit: cover;
-      height: 180%;
-    }
-
-    .aplicacion__pokemon{
-        width: 50%;
-    }
-
-    .aplicacion__formulario {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-  
-    .aplicacion__input {
-      width: 80%;
-    }
-  
-    .aplicacion__btn {
-      width: 60%;
-      padding: 1rem 0;
-    }
+  .aplicacion__pokemon-jugadores {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 500px) {
-    .background{
-        height: 200%;
-    }
+  .background {
+    align-items: center;
+    object-fit: cover;
+    height: 150%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 605px) {
+  .aplicacion__pokemon-jugadores {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  @media (max-width: 400px) {
-    .background{
-        height: 220%;
-    }
+  .background {
+    align-items: center;
+    object-fit: cover;
+    height: 180%;
+    justify-content: center;
   }
 
-  @media (max-width: 290px) {
-    .background{
-        height: 220%;
-    }
+  .aplicacion__pokemon {
+    width: 50%;
   }
+
+  .aplicacion__formulario {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .aplicacion__input {
+    width: 80%;
+  }
+
+  .aplicacion__btn {
+    width: 60%;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .background {
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    height: 200%;
+  }
+}
+
+@media (max-width: 400px) {
+  .background {
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    height: 220%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 290px) {
+  .background {
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    height: 220%;
+    width: 100%;
+
+  }
+}
