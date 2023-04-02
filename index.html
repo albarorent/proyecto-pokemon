@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Buscador Pokemons</title>
+</head>
+<body>
+
+    <img src="fondo.jpg" class="background">
+
+    </img>
+
+    <main class="aplicacion" id="aplicacion">
+        <h1 class="aplicacion__titulo">Caza tu pokemon</h1>
+        <div class="aplicacion__contenedor">
+          <form class="aplicacion__formulario" id="formulario">
+            <input
+              type="search"
+              name="buscar"
+              id="buscar"
+              class="aplicacion__input"
+              placeholder="Ingrese el nombre del pokemon"
+            />
+            <input type="submit" value="Buscar" class="aplicacion__btn" />
+          </form>
+  
+          <div id="pokemon" class="aplicacion__equipo"></div>
+        </div>
+      </main>
+
+
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
