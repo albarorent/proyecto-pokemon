@@ -15,7 +15,7 @@ function buscarPokemon(e) {
         mostrarError("Debe ingresar el nombre de un pokemon.");
         return;
     }
-    limpiarHTML()
+    limpiarHTML();
     fetchData(buscarInput.trim());
 }
 
@@ -25,6 +25,7 @@ const fetchData = async (pokemon) => {
     try {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
         const data = await res.json()
+
         mostrarPokemon(data)
 
     } catch (error) {
@@ -131,3 +132,19 @@ function mostrarError(mensaje) {
         }, 2000);
     }
 }
+
+// function spinner() {
+//     limpiarHTML()
+//     const divSpinner = document.createElement("DIV");
+//     divSpinner.classList.add("loader");
+//     divSpinner.innerHTML = `
+//         <div class="loader-square"></div>
+//         <div class="loader-square"></div>
+//         <div class="loader-square"></div>
+//         <div class="loader-square"></div>
+//         <div class="loader-square"></div>
+//         <div class="loader-square"></div>
+//         <div class="loader-square"></div>
+//     `;
+//     resultado.appendChild(divSpinner);
+// }
